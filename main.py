@@ -30,17 +30,23 @@ classic_face_path = input("CLASSIC FACE: ")
 
 skin_color_red = input("SKIN COLOR OF CHARACTER [R]: ")
 
-if not isinstance(skin_color_red, int):
+try:
+    skin_color_red = int(skin_color_red)
+except Exception:
     panic("INVALID RED.")
 
 skin_color_green = input("SKIN COLOR OF CHARACTER [G]: ")
 
-if not isinstance(skin_color_green, int):
+try:
+    skin_color_green = int(skin_color_green)
+except Exception:
     panic("INVALID GREEN.")
 
 skin_color_blue = input("SKIN COLOR OF CHARACTER [B]: ")
 
-if not isinstance(skin_color_blue, int):
+try:
+    skin_color_blue = int(skin_color_blue)
+except Exception:
     panic("INVALID BLUE.")
 
 SKIN_COLOR = (skin_color_red, skin_color_green, skin_color_blue)
